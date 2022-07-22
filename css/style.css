@@ -1,0 +1,46 @@
+*:root{
+    --primary:#d84e0f;
+    --white: #fff
+}
+html, body{
+    background-image: url(../images/sky.jpeg);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.container{
+    height: 100%;
+}
+.card{
+    width: 400px;
+    height: 350px;
+    background-color: rgba(0,0,0,0.4);
+}
+.card-header>h3{
+    color: var(--white);
+}
+.input-group>span{
+    background-color: var(--primary);
+    border: 0;
+    color: var(--white);
+}
+input:focus{
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+.registration_btn{
+    margin-top: -15%;
+    margin-left: 4.5%;
+    color: var(--white);
+    background-color: var(--primary);
+}
+.registration_btn:hover{
+    color:#000;
+    background-color: var(--white);
+}
+
+.signup>a, .signin>a{
+    color: var(--primary);
+}
+.signin_card{
+    height: 300px;
+}
