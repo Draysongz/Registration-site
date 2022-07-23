@@ -1,4 +1,7 @@
 <?php
+
+#session start
+session_start();
 include("partials/connect.php");
 if(isset($_POST['login'])){
     $username= $_POST['username'];
@@ -13,6 +16,7 @@ if(isset($_POST['login'])){
     $num_rows=mysqli_num_rows($result);
     if($num_rows>0){
         if(password_verify($password,$fetch_data['password'])){
+            $_SESSION['username'] = $username;
             echo "<script>alert('You have successfully logged in')</script>";
             echo "<script>window.open('home.php', '_self')</script>";
         }else{
